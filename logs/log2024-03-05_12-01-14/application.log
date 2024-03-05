@@ -1,0 +1,10 @@
+2024-03-05 12:01:14,103 - custom_logger - INFO - INFO:Logger has been initialized.
+2024-03-05 12:01:14,107 - custom_logger - INFO - INFO:Setting up UI.
+2024-03-05 12:01:16,010 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 12:01:16,011 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_12-01-16\frames,
+data\2024-03-05_12-01-16\input_logs.csv,
+data\2024-03-05_12-01-16\recording.avi
+]
+2024-03-05 12:01:16,027 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 12:01:35,918 - custom_logger - INFO - INFO:Recording stopped, saving data.

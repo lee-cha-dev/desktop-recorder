@@ -1,3 +1,4 @@
+import subprocess
 import time
 import tkinter as tk
 from tkinter import filedialog, messagebox
@@ -12,7 +13,9 @@ from pynput.keyboard import Listener as KeyboardListener
 from pynput.mouse import Listener as MouseListener
 import pandas as pd
 import datetime
-from tkinter import font as tkFont
+from tkinter import font as tkFont, ttk
+import pyaudio
+import wave
 
 from custom_button import CustomButton, ModernButton
 from custom_logger import CustomLogger
@@ -20,24 +23,34 @@ from custom_logger import CustomLogger
 
 class ScreenRecorder:
     def __init__(self, root):
+        self.audio_flag = None
+        self.fps_label = None
+        self.fps_option = None
         self.button_frame_bottom = None
         self.button_frame_middle = None
         self.button_frame_top = None
         self.button_frame = None
+
         self.open_button = None
         self.stop_button = None
         self.pause_button = None
         self.start_button = None
+
         self.root = root
+
         self.filename = None
         self.input_filename = None
+
         self.datetime_string = None
         self.main_directory_path = None
         self.frames_directory_path = None
+
         self.recording_process = None
         self.input_logging_process = None
+        self.audio_recording_process = None
         self.start_time = None
         self.frames = []
+        self.audio_device_index = None
 
         self.record_inputs = True
         self.record_video = True
@@ -58,6 +71,7 @@ class ScreenRecorder:
         
         # Shared values to control recording and pause across processes
         self.recording_flag = Value(ctypes.c_bool, False)
+        self.audio_flag = Value(ctypes.c_bool, False)
         self.paused_flag = Value(ctypes.c_bool, False)
         self.pause_start_time = Value(ctypes.c_double, 0.0)  # Time when the recording was paused
         self.total_pause_duration = Value(ctypes.c_double, 0.0)  # Total duration of all pauses
@@ -132,6 +146,7 @@ class ScreenRecorder:
         self.button_frame_bottom = tk.Frame(self.button_frame, bg="#000000")
         self.button_frame_bottom.grid(row=2, sticky="nsew")
 
+        # BUTTON FRAME TOP SETUP
         self.start_button = CustomButton(self.button_frame_top, text="Start Recording", command=self.start_recording)
         self.start_button.grid(row=0, column=0, padx=5, pady=5, sticky="nsew")
 
@@ -145,6 +160,21 @@ class ScreenRecorder:
         self.open_button.grid(row=1, column=1, padx=5, pady=5, sticky="nsew")
 
         # BUTTON FRAME MIDDLE SETUP
+        for i in range(10):
+            self.button_frame_middle.rowconfigure(i, weight=i)
+
+        self.button_frame_middle.columnconfigure(0, weight=1)
+
+
+        self.fps_label = tk.Label(self.button_frame_middle, text="FPS:", bg="#141414", fg="white",
+                                  font=self.custom_font)
+        self.fps_label.grid(row=1, column=0, padx=(5, 0), pady=0, sticky="ew")
+
+        self.fps_option = ttk.Combobox(self.button_frame_middle, values=['5', '10', '15', '20', '24', '30', '60'], state="readonly")
+        self.fps_option.grid(row=1, column=1, padx=(0, 5), pady=0, sticky="ew")
+        self.fps_option.set(30)  # Default value
+
+        # BUTTON FRAME BOTTOM SETUP
         self.button_frame_bottom.rowconfigure(0, weight=3)
         self.button_frame_bottom.rowconfigure(1, weight=3)
         self.button_frame_bottom.rowconfigure(2, weight=3)
@@ -182,6 +212,8 @@ class ScreenRecorder:
         self.record_frames_option_label.grid(row=2, column=0, padx=(5, 0), pady=5, sticky="nsew")
         # Left column setup ends
 
+        self.audio_device_index = self.get_device_index_by_name()
+
     def generate_file_paths(self):
         # Format the current datetime in a file-friendly way
         self.datetime_string = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -201,17 +233,35 @@ class ScreenRecorder:
             self.logger.log("INFO:Recording Started.")
             self.generate_file_paths()
             self.recording_flag.value = True
+            self.audio_flag.value = True
             self.paused_flag.value = False
             self.start_time = time.time()
             self.start_background_processes()
             self.update_ui_state(started=True)
 
+    def start_capturing_audio(self):
+        # Only start capturing if not already doing so
+        if self.audio_recording_process is None or not self.audio_recording_process.is_alive():
+            # Flag to control audio recording, similar to video
+            # self.audio_flag = Value(ctypes.c_bool, True)
+
+            # Define the audio file name and path
+            audio_filename = os.path.join(self.main_directory_path, 'audio.wav')
+
+            # Initialize and start the audio recording process
+            self.audio_recording_process = Process(target=self.capture_audio,
+                                                   args=(audio_filename, self.audio_flag, self.recording_flag, self.audio_device_index))
+            # while recording_flag_value and audio_flag_value:
+            self.audio_recording_process.start()
+
     def start_background_processes(self):
-        self.recording_process = Process(target=self.record, args=(self.filename, self.recording_flag, self.paused_flag, self.frames_directory_path))
+        fps = int(self.fps_option.get())
+        self.recording_process = Process(target=self.record, args=(self.filename, fps, self.recording_flag, self.paused_flag, self.frames_directory_path))
         self.input_logging_process = Process(target=self.start_input_logging, args=(
             self.recording_flag, self.input_filename, self.start_time, self.paused_flag, self.pause_start_time, self.total_pause_duration
         ))
         self.recording_process.start()
+        self.start_capturing_audio()
         self.input_logging_process.start()
 
     def update_ui_state(self, started=False):
@@ -231,16 +281,34 @@ class ScreenRecorder:
         self.logger.log("INFO:Recording stopped, saving data.")
         if self.recording_process and self.recording_process.is_alive():
             self.recording_flag.value = False
-            self.recording_process.join()
-            self.input_logging_process.join()
+            self.audio_flag.value = False
+            if self.recording_process is not None:
+                self.recording_process.join()
+            if self.input_logging_process is not None:
+                self.input_logging_process.join()
+            if self.audio_recording_process is not None:
+                self.audio_recording_process.join()
+
+            # Paths to your audio and video files
+            audio_filename = os.path.join(self.main_directory_path, 'audio.wav')  # Example path
+            video_filename = self.filename  # Already defined in start_recording
+            output_filename = os.path.join(self.main_directory_path, 'final_output.mp4')  # Desired output path
+
+            # Call the merge function
+            self.merge_audio_video(audio_filename, video_filename, output_filename)
+
+            # UI update and cleanup logic here
+            self.update_ui_state(started=False)
+            self.logger.log(f"INFO:Merge complete. Output saved to {output_filename}")
+
             self.update_ui_state(started=False)
 
     @staticmethod
-    def record(filename, recording_flag, paused_flag, frames_directory_path):
+    def record(filename, fps, recording_flag, paused_flag, frames_directory_path):
         frames = []
         screen_size = pyautogui.size()
         fourcc = cv2.VideoWriter_fourcc(*"XVID")
-        out = cv2.VideoWriter(filename, fourcc, 20.0, (screen_size.width, screen_size.height))
+        out = cv2.VideoWriter(filename, fourcc, fps, (screen_size.width, screen_size.height))
         while recording_flag.value:
             if not paused_flag.value:
                 img = pyautogui.screenshot()
@@ -313,3 +381,75 @@ class ScreenRecorder:
             except Exception as e:
                 messagebox.showerror("Error", "Failed to open the file.")
                 self.logger.log(f"Error:Failed to open recording: {filename}. Error: {e}")
+
+    @staticmethod
+    def capture_audio(audio_filename, audio_flag, recording_flag, device_index):
+        chunk = 1024
+        _format = pyaudio.paInt16
+        channels = 2
+        sample_rate = 44100
+        p = pyaudio.PyAudio()
+        stream = p.open(format=_format, channels=channels, rate=sample_rate, input=True, frames_per_buffer=chunk,
+                        input_device_index=device_index)
+        frames = []
+
+        print("Audio Capture Loop Starting")
+        while recording_flag.value and audio_flag.value:
+            data = stream.read(chunk)
+            frames.append(data)
+
+        print("Looped Exited; Stoping and Closing stream")
+        stream.stop_stream()
+        stream.close()
+        p.terminate()
+
+        wf = wave.open(audio_filename, 'wb')
+        wf.setnchannels(channels)
+        wf.setsampwidth(p.get_sample_size(_format))
+        wf.setframerate(sample_rate)
+        wf.writeframes(b''.join(frames))
+        wf.close()
+        print("Audio file saved")
+
+    @staticmethod
+    def merge_audio_video(audio_filename, video_filename, output_filename):
+        command = [
+            'C:/ProgramData/chocolatey/lib/ffmpeg/tools/ffmpeg/bin/ffmpeg.exe',
+            '-i', video_filename,
+            '-i', audio_filename,
+            '-c:v', 'copy',
+            '-c:a', 'aac',
+            '-strict', 'experimental',
+            output_filename
+        ]
+        try:
+            subprocess.run(command, check=True)
+            print(f'Successfully merged into {output_filename}')
+        except subprocess.CalledProcessError as e:
+            print(f'Failed to merge audio and video: {e}')
+            exit()
+
+    def list_audio_devices(self):
+        p = pyaudio.PyAudio()
+        print("Available audio devices:")
+        for i in range(p.get_device_count()):
+            info = p.get_device_info_by_index(i)
+            print(f"{i}: {info.get('name')}")
+        p.terminate()
+
+    def select_audio_device(self):
+        self.list_audio_devices()
+        device_index = int(input("Select device index: "))  # Manually select the device based on printed list
+        return device_index
+
+    @staticmethod
+    def get_device_index_by_name(target_name="What U Hear"):
+        p = pyaudio.PyAudio()
+        device_index = None
+        for i in range(p.get_device_count()):
+            device_info = p.get_device_info_by_index(i)
+            if target_name in device_info['name']:
+                device_index = i
+                break
+        p.terminate()
+        return device_index
