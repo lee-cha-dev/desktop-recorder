@@ -13,6 +13,14 @@
 * [x] Add in the functionality to capture keyboard inputs
 * [x] Add in the functionality to capture mouse inputs (x, y, and clicks - with time stamps)
 * [x] Ensure that naming conventions transfer.
+* [x] Add in FPS combobox
+* [x] Enable Audio
+* [x] Merge wav & avi files into a mp4 file
+* [ ] Add a toggle to allow the user to switch audio off/on
+* [ ] Add in functionality to the following switches:
+  * [ ] Capture User Inputs
+  * [ ] Capture Video
+  * [ ] Capture Video Frames
 * [ ] Refine GUI & Styling
 * [ ] Refactor code (should have been done while developing)
 * [ ] Create ReadMe.md for full installation & usage instructions
