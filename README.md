@@ -50,7 +50,7 @@ The application window will open, providing you with options to start, pause, st
 - **Pandas**: For storing input logs in a CSV format.
 
 ## Purpose
-The Desktop Recorder was specifically developed to facilitate the creation of datasets for neural network models. By capturing detailed video recordings in AVI format, frames in JPEG format, and user inputs in CSV format, it provides a rich source of data that can be used for training, testing, and validating machine learning models. This makes it an essential tool for anyone involved in AI development, offering a practical solution for data collection and preprocessing.
+The Desktop Recorder was specifically developed to facilitate the creation of datasets for neural network models. By capturing detailed video recordings in AVI format, frames in JPEG format, and user inputs in CSV format, it provides a rich source of data that can be used for training, testing, and validating machine learning models. This makes it an essential tool for anyone involved in AI development, offering a practical solution for data collection.
 
 ## Acknowledgements
 I am the sole contributor to the Desktop Recorder project and would like to acknowledge the contributions of the open-source community. The libraries and dependencies utilized in this project reflect the collaborative spirit of open-source development, and I am grateful for the support that has made this tool possible.
