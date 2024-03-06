@@ -18,6 +18,7 @@ import wave
 
 from custom_button import CustomButton, ModernButton
 from custom_logger import CustomLogger
+from custom_combo_box import CustomComboBox
 
 
 class ScreenRecorder:
@@ -164,8 +165,12 @@ class ScreenRecorder:
         self.fps_label = tk.Label(self.button_frame_middle, text="FPS:", bg="#141414", fg="white",
                                   font=self.custom_font)
         self.fps_label.grid(row=1, column=0, padx=(5, 0), pady=0, sticky="ew")
+        # self.fps_option = CustomMessageBox(self.button_frame_middle, message="This is a custom message box.", title="Custom Title")
 
-        self.fps_option = ttk.Combobox(self.button_frame_middle, values=['5', '10', '15', '20', '24', '30', '60'], state="readonly")
+        # self.fps_option = ttk.Combobox(self.button_frame_middle, values=['5', '10', '15', '20', '24', '30', '60'], state="readonly")
+        self.fps_option = CustomComboBox(
+            self.button_frame_middle, values=['5', '10', '15', '20', '24', '30', '60'], state="readonly"
+        )
         self.fps_option.grid(row=1, column=1, padx=(0, 5), pady=0, sticky="ew")
         self.fps_option.set(24)  # Default value
 
