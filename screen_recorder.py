@@ -36,6 +36,7 @@ class ScreenRecorder:
         self.start_button = None
 
         self.root = root
+        self.root.protocol("WM_DELETE_WINDOW", self.on_exit)
 
         self.filename = None
         self.input_filename = None
@@ -387,3 +388,8 @@ class ScreenRecorder:
             except Exception as e:
                 messagebox.showerror("Error", "Failed to open the file.")
                 self.logger.log(f"Error:Failed to open recording: {filename}. Error: {e}")
+
+    def on_exit(self):
+        if self.recording_flag:
+            self.stop_recording()
+            self.root.destroy()
