@@ -55,11 +55,14 @@ class ScreenRecorder:
         self.record_inputs_option = None
         self.record_video_option = None
         self.record_frames_option = None
+        self.check_inputs = True
+        self.check_video = True
+        self.check_frames = True
 
         self.custom_font = tkFont.Font(family="Helvetica", size=10, weight="bold")
-        self.record_inputs_option_label = None
-        self.record_video_option_label = None
-        self.record_frames_option_label = None
+        self.record_inputs_option = None
+        self.record_video_option = None
+        self.record_frames_option = None
 
         self.logger = CustomLogger()
         self.logger.log("INFO:Logger has been initialized.")
@@ -99,35 +102,27 @@ class ScreenRecorder:
     def setup_ui(self):
         self.logger.log("INFO:Setting up UI.")
         self.root.title("Screen Recorder")
-        self.root.geometry("1000x600")
+        self.root.geometry("325x600")
+        self.root.minsize(300, 575)
+        # self.root.maxsize(525, 825)
+        self.root.resizable(False, False)
         self.root.configure(background="#141414")
-
-        # Define the layout grid
-        # self.root.rowconfigure(0, weight=1)
-        # self.root.rowconfigure(1, weight=1)
-        # self.root.rowconfigure(2, weight=1)
-        # self.root.rowconfigure(3, weight=1)
-        #
-        # self.root.columnconfigure(0, weight=2)
-        # self.root.columnconfigure(1, weight=4)
-        # self.root.columnconfigure(2, weight=4)
 
         # Configure the main window's columns and rows
         self.root.columnconfigure(0, weight=1)  # Pane column takes up 20% of the width
-        self.root.columnconfigure(1, weight=9)  # Remaining space
         self.root.rowconfigure(0, weight=1)  # Only one row that takes up all the height
 
-        # Left column setup begins
+        # BUTTON FRAME
         self.button_frame = tk.Frame(self.root, bg="green")
         self.button_frame.grid(row=0, column=0, sticky="nsew")
-        self.button_frame.columnconfigure(0, weight=1)
 
-        # Configure the button pane's rows to distribute space among buttons
-        # Assuming 4 buttons for example, adjust as needed
+        # BUTTON FRAME ROW AND COLUMN CONFIGS
         self.button_frame.rowconfigure(0, weight=1)
         self.button_frame.rowconfigure(1, weight=8)
         self.button_frame.rowconfigure(2, weight=1)
+        self.button_frame.columnconfigure(0, weight=1)
 
+        # INIT AND CONFIG TOP FRAME
         self.button_frame_top = tk.Frame(self.button_frame, bg="#000000")
         self.button_frame_top.grid(row=0, column=0, sticky="nsew")
         self.button_frame_top.rowconfigure(0, weight=5)
@@ -135,10 +130,22 @@ class ScreenRecorder:
         self.button_frame_top.columnconfigure(0, weight=5)
         self.button_frame_top.columnconfigure(1, weight=5)
 
+        # INIT AND CONFIG MIDDLE FRAME
         self.button_frame_middle = tk.Frame(self.button_frame, bg="#000000")
-        self.button_frame_middle.grid(row=1, sticky="nsew")
+        self.button_frame_middle.grid(row=1, column=0, sticky="nsew")
+        for i in range(10):
+            self.button_frame_middle.rowconfigure(i, weight=i)
+        self.button_frame_middle.columnconfigure(0, weight=1)
+
+        # INIT AND CONFIG BOTTOM FRAME
         self.button_frame_bottom = tk.Frame(self.button_frame, bg="#000000")
-        self.button_frame_bottom.grid(row=2, sticky="nsew")
+        self.button_frame_bottom.grid(row=2, column=0, sticky="nsew")
+        self.button_frame_bottom.rowconfigure(0, weight=3)
+        self.button_frame_bottom.rowconfigure(1, weight=3)
+        self.button_frame_bottom.rowconfigure(2, weight=3)
+        self.button_frame_bottom.columnconfigure(0, weight=1)
+
+        # SETUP THE THREE FRAME'S CHILD ELEMENTS
 
         # BUTTON FRAME TOP SETUP
         self.start_button = CustomButton(self.button_frame_top, text="Start Recording", command=self.start_recording)
@@ -154,57 +161,74 @@ class ScreenRecorder:
         self.open_button.grid(row=1, column=1, padx=5, pady=5, sticky="nsew")
 
         # BUTTON FRAME MIDDLE SETUP
-        for i in range(10):
-            self.button_frame_middle.rowconfigure(i, weight=i)
-
-        self.button_frame_middle.columnconfigure(0, weight=1)
-
-
         self.fps_label = tk.Label(self.button_frame_middle, text="FPS:", bg="#141414", fg="white",
                                   font=self.custom_font)
         self.fps_label.grid(row=1, column=0, padx=(5, 0), pady=0, sticky="ew")
 
         self.fps_option = ttk.Combobox(self.button_frame_middle, values=['5', '10', '15', '20', '24', '30', '60'], state="readonly")
         self.fps_option.grid(row=1, column=1, padx=(0, 5), pady=0, sticky="ew")
-        self.fps_option.set(30)  # Default value
+        self.fps_option.set(24)  # Default value
 
         # BUTTON FRAME BOTTOM SETUP
-        self.button_frame_bottom.rowconfigure(0, weight=3)
-        self.button_frame_bottom.rowconfigure(1, weight=3)
-        self.button_frame_bottom.rowconfigure(2, weight=3)
-        self.button_frame_bottom.columnconfigure(0, weight=9)
-        self.button_frame_bottom.columnconfigure(1, weight=1)
+        self.record_video_option = CustomButton(
+            self.button_frame_bottom,
+            text="Capture Video: True",
+            command=self.check_video_command
+        )
+        self.record_video_option.grid(row=0, column=0, padx=5, pady=5, sticky="nsew")
 
-        self.record_inputs_option = tk.Checkbutton(
-            self.button_frame_bottom, text="", bg="#141414", fg="white", font=self.custom_font
+        self.record_frames_option = CustomButton(
+            self.button_frame_bottom,
+            text="Capture Frames: True",
+            command=self.check_frames_command
         )
-        self.record_inputs_option.grid(row=0, column=1, padx=(0, 5), pady=5, sticky="nsew")
-        self.record_video_option = tk.Checkbutton(
-            self.button_frame_bottom, text="", bg="#141414", fg="white", font=self.custom_font
-        )
-        self.record_video_option.grid(row=1, column=1, padx=(0, 5), pady=5, sticky="nsew")
-        self.record_frames_option = tk.Checkbutton(
-            self.button_frame_bottom, text="", bg="#141414", fg="white", font=self.custom_font
-        )
-        self.record_frames_option.grid(row=2, column=1, padx=(0, 5), pady=5, sticky="nsew")
+        self.record_frames_option.grid(row=1, column=0, padx=5, pady=0, sticky="nsew")
 
+        self.record_inputs_option = CustomButton(
+            self.button_frame_bottom,
+            text="Capture Inputs: True",
+            command=self.check_inputs_command
+        )
+        self.record_inputs_option.grid(row=2, column=0, padx=5, pady=5, sticky="nsew")
 
-        self.record_inputs_option_label = tk.Label(
-            self.button_frame_bottom, bg="#141414", fg="white",
-            text="Capture User Inputs", font=self.custom_font
-        )
-        self.record_inputs_option_label.grid(row=0, column=0, padx=(5, 0), pady=5, sticky="nsew")
-        self.record_video_option_label = tk.Label(
-            self.button_frame_bottom, bg="#141414", fg="white",
-            text="Capture Video Capture", font=self.custom_font
-        )
-        self.record_video_option_label.grid(row=1, column=0, padx=(5, 0), pady=5, sticky="nsew")
-        self.record_frames_option_label = tk.Label(
-            self.button_frame_bottom, bg="#141414", fg="white",
-            text="Capture Video Frames", font=self.custom_font
-        )
-        self.record_frames_option_label.grid(row=2, column=0, padx=(5, 0), pady=5, sticky="nsew")
-        # Left column setup ends
+    def check_frames_command(self):
+        if self.check_frames is True:
+            self.check_frames = False
+        else:
+            self.check_frames = True
+
+        self.record_frames_option.config(text=f"Capture Frames: {self.check_frames}")
+
+    def check_video_command(self):
+        if self.check_video is True:
+            self.check_video = False
+            self.check_frames = True
+            self.check_inputs = True
+            self.check_frames_command()
+            self.check_inputs_command()
+
+            self.record_frames_option.config(state="disabled")
+            self.record_inputs_option.config(state="disabled")
+            self.start_button.config(state="disabled")
+        else:
+            self.check_video = True
+            self.check_frames = False
+            self.check_inputs = False
+            self.check_frames_command()
+            self.check_inputs_command()
+
+            self.record_frames_option.config(state="normal")
+            self.record_inputs_option.config(state="normal")
+            self.start_button.config(state="normal")
+
+        self.record_video_option.config(text=f"Capture Video: {self.check_video}")
+
+    def check_inputs_command(self):
+        if self.check_inputs is True:
+            self.check_inputs = False
+        else:
+            self.check_inputs = True
+        self.record_inputs_option.config(text=f"Capture Inputs: {self.check_inputs}")
 
     def generate_file_paths(self):
         # Format the current datetime in a file-friendly way
@@ -222,6 +246,10 @@ class ScreenRecorder:
 
     def start_recording(self):
         if self.recording_process is None or not self.recording_process.is_alive():
+            self.record_frames_option.config(state="disabled")
+            self.record_inputs_option.config(state="disabled")
+            self.record_video_option.config(state="disabled")
+
             self.logger.log("INFO:Recording Started.")
             self.generate_file_paths()
             self.recording_flag.value = True
@@ -232,12 +260,14 @@ class ScreenRecorder:
 
     def start_background_processes(self):
         fps = int(self.fps_option.get())
-        self.recording_process = Process(target=self.record, args=(self.filename, fps, self.recording_flag, self.paused_flag, self.frames_directory_path))
+        self.recording_process = Process(target=self.record, args=(self.filename, fps, self.recording_flag, self.paused_flag, self.frames_directory_path, self.check_frames))
         self.input_logging_process = Process(target=self.start_input_logging, args=(
             self.recording_flag, self.input_filename, self.start_time, self.paused_flag, self.pause_start_time, self.total_pause_duration
         ))
-        self.recording_process.start()
-        self.input_logging_process.start()
+        if self.check_video:
+            self.recording_process.start()
+        if self.check_inputs:
+            self.input_logging_process.start()
 
     def update_ui_state(self, started=False):
         self.logger.log("INFO:UI Updated.")
@@ -256,23 +286,25 @@ class ScreenRecorder:
         self.logger.log("INFO:Recording stopped, saving data.")
         if self.recording_process and self.recording_process.is_alive():
             self.recording_flag.value = False
-            if self.recording_process is not None:
+            if self.recording_process is not None and self.check_video:
                 self.recording_process.join()
-            if self.input_logging_process is not None:
+            if self.input_logging_process is not None and self.check_inputs:
                 self.input_logging_process.join()
-
-            # Paths to your video files
             video_filename = self.filename  # Already defined in start_recording
-            output_filename = os.path.join(self.main_directory_path, 'final_output.mp4')  # Desired output path
+            self.logger.log(f"INFO:AVI saved. Output saved to {video_filename}")
+        elif self.input_logging_process is not None and self.check_inputs:
+            print("Inside Elif")
+            self.input_logging_process.join()
 
-            # UI update and cleanup logic here
-            self.update_ui_state(started=False)
-            self.logger.log(f"INFO:Merge complete. Output saved to {output_filename}")
+        self.record_frames_option.config(state="normal")
+        self.record_inputs_option.config(state="normal")
+        self.record_video_option.config(state="normal")
+        print("Outside Elif")
+        self.update_ui_state(started=False)
 
-            self.update_ui_state(started=False)
 
     @staticmethod
-    def record(filename, fps, recording_flag, paused_flag, frames_directory_path):
+    def record(filename, fps, recording_flag, paused_flag, frames_directory_path, check_frames):
         frames = []
         screen_size = pyautogui.size()
         fourcc = cv2.VideoWriter_fourcc(*"XVID")
@@ -286,12 +318,13 @@ class ScreenRecorder:
                 out.write(frame)
 
         # METHOD FOR SAVING THE ACTUAL IMAGES (SAVE FRAME AFTER CONVERSION)
-        for index, frame in enumerate(frames):
-            # Construct a filename for each frame
-            frame_filename = f"frame_{index:04d}.jpeg"
-            frame_path = os.path.join(frames_directory_path, frame_filename)
-            # Save the frame
-            cv2.imwrite(frame_path, frame)
+        if check_frames:
+            for index, frame in enumerate(frames):
+                # Construct a filename for each frame
+                frame_filename = f"frame_{index:04d}.jpeg"
+                frame_path = os.path.join(frames_directory_path, frame_filename)
+                # Save the frame
+                cv2.imwrite(frame_path, frame)
 
         out.release()
 
