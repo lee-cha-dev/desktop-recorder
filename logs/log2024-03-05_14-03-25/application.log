@@ -1,0 +1,13 @@
+2024-03-05 14:03:25,790 - custom_logger - INFO - INFO:Logger has been initialized.
+2024-03-05 14:03:25,794 - custom_logger - INFO - INFO:Setting up UI.
+2024-03-05 14:03:27,843 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 14:03:27,845 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_14-03-27\frames,
+data\2024-03-05_14-03-27\input_logs.csv,
+data\2024-03-05_14-03-27\recording.avi
+]
+2024-03-05 14:03:27,856 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 14:03:51,019 - custom_logger - INFO - INFO:Recording stopped, saving data.
+2024-03-05 14:04:04,646 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 14:04:04,647 - custom_logger - INFO - INFO:Merge complete. Output saved to data\2024-03-05_14-03-27\final_output.mp4
+2024-03-05 14:04:04,648 - custom_logger - INFO - INFO:UI Updated.

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ad59f8d-6d06-4546-b832-8bff7112f96c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0000.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0002.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0003.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0004.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0005.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0006.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0007.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0008.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0009.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0011.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0012.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0013.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0014.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0015.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0016.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0017.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0018.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0019.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0020.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0021.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0022.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0023.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0024.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0025.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0026.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0027.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0028.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0029.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0030.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0031.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0032.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0033.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0034.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0035.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0036.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0037.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0038.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0039.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0040.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0041.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0042.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0043.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0044.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0045.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0046.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0047.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0048.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0049.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0050.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0051.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0052.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0053.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0054.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0055.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0056.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0057.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0058.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0059.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0060.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0061.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0062.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0063.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0064.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0065.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0066.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0067.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0068.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0069.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0070.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0071.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0072.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0073.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0074.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0075.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0076.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0077.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0078.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0079.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0080.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0081.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0082.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0083.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0084.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0085.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0086.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0087.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0088.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0089.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0090.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0091.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0092.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0093.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0094.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0095.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0096.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0097.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0098.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0099.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0101.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0102.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0103.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0104.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0105.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0106.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0107.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0108.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0109.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0110.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0111.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0112.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0113.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0114.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0115.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0116.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0117.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0118.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0119.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0120.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0121.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0122.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0123.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0124.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0125.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0126.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0127.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0128.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0129.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0130.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0131.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0132.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0133.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0134.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0135.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0136.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0137.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0138.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0139.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0140.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0141.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0142.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0143.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0144.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0145.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0146.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0147.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0148.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0149.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0150.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0151.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0152.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0153.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0154.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0155.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0156.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0157.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0158.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0159.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0160.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0161.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0162.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0163.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0164.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0165.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0166.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0167.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0168.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0169.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0170.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0171.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0172.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0173.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0174.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0175.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0176.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0177.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0178.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0179.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0180.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0181.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0182.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0183.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0184.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0185.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0186.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0187.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0188.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0189.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0190.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0191.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0192.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0193.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0194.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0195.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0196.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0197.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0198.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0199.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0200.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0201.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0202.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0203.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0204.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0205.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0206.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0207.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0208.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0209.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0210.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0211.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0212.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0213.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0214.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0215.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0216.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0217.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0218.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0219.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0220.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0221.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0222.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0223.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0224.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0225.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0226.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0227.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0228.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0229.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0230.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0231.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0232.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0233.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0234.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0235.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0236.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0237.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0238.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0239.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0240.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0241.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0242.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0243.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0244.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0245.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0246.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0247.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0248.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0249.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0250.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0251.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0252.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0253.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0254.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0255.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0256.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0257.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0258.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0259.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0260.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0261.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0262.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0263.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0264.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0265.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0266.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0267.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0268.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0269.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0270.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0271.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0272.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0273.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0274.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0275.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0276.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0277.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0278.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0279.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0280.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0281.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0282.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0283.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0284.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0285.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0286.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0287.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0288.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0289.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0290.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0291.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0292.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0293.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0294.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0295.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0296.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0297.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0298.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0299.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0300.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0301.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0302.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0303.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0304.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0305.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0306.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0307.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0308.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0309.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0310.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0311.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0312.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0313.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0314.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0315.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0316.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0317.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0318.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0319.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0320.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0321.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0322.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0323.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0324.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0325.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0326.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0327.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0328.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0329.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0330.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0331.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0332.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0333.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0334.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0335.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0336.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0337.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0338.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0339.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0340.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0341.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0342.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0343.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0344.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0345.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0346.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0347.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0348.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0349.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0350.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0351.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0352.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0353.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0354.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0355.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0356.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0357.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0358.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0359.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0360.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0361.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0362.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0363.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0364.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0365.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0366.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0367.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0368.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0369.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0370.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0371.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0372.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0373.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0374.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0375.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0376.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0377.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0378.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0379.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0380.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0381.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0382.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0383.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0384.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0385.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0386.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0387.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0388.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0389.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0390.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0391.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0392.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0393.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0394.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0395.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0396.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0397.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0398.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0399.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0400.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0401.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/frames/frame_0402.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/input_logs.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2024-03-05_20-07-53/recording.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_13-12-02/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_13-52-38/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-03-25/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-06-54/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-56-59/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-57-34/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-58-26/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_14-59-35/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-00-00/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-05-23/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-15-22/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-19-24/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-19-31/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-20-23/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-23-22/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-29-40/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-34-39/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-35-03/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-35-28/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-35-44/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-36-11/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-36-28/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-36-41/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-37-48/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-58-07/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_15-58-58/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-07-03/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-12-12/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-13-41/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-15-03/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-15-46/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-17-59/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-23-05/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-27-45/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-27-49/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-28-41/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-29-23/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-32-23/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-33-40/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-34-45/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-34-49/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-42-15/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-44-05/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-49-07/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-54-55/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-56-58/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_16-58-47/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-00-10/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-03-01/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-03-37/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-04-02/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-20-30/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-23-25/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_17-24-07/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_18-34-34/application.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log2024-03-05_20-00-19/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/screen_recorder.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2dDQgPPCIEHGKFZvUUZ26uOPJbo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DeveloperProjects/PycharmProjects/desktop-recorder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ad59f8d-6d06-4546-b832-8bff7112f96c" name="Changes" comment="" />
+      <created>1709540279628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709540279628</updated>
+      <workItem from="1709540281014" duration="2722000" />
+      <workItem from="1709564530409" duration="33364000" />
+      <workItem from="1709661633805" duration="21496000" />
+      <workItem from="1709691251723" duration="557000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/desktop_recorder$main.coverage" NAME="main Coverage Results" MODIFIED="1709677664365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

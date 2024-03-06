@@ -260,8 +260,8 @@ class ScreenRecorder:
 
     def start_background_processes(self):
         fps = int(self.fps_option.get())
-        self.recording_process = Process(target=self.record, args=(self.filename, fps, self.recording_flag, self.paused_flag, self.frames_directory_path, self.check_frames))
-        self.input_logging_process = Process(target=self.start_input_logging, args=(
+        self.recording_process = Process(target=self.record, daemon=True, args=(self.filename, fps, self.recording_flag, self.paused_flag, self.frames_directory_path, self.check_frames))
+        self.input_logging_process = Process(target=self.start_input_logging, daemon=True, args=(
             self.recording_flag, self.input_filename, self.start_time, self.paused_flag, self.pause_start_time, self.total_pause_duration
         ))
         if self.check_video:

@@ -1,0 +1,44 @@
+2024-03-05 16:07:03,180 - custom_logger - INFO - INFO:Logger has been initialized.
+2024-03-05 16:07:03,184 - custom_logger - INFO - INFO:Setting up UI.
+2024-03-05 16:07:09,388 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 16:07:09,389 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_16-07-09\frames,
+data\2024-03-05_16-07-09\input_logs.csv,
+data\2024-03-05_16-07-09\recording.avi
+]
+2024-03-05 16:07:09,396 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:07:26,119 - custom_logger - INFO - INFO:Recording stopped, saving data.
+2024-03-05 16:07:26,413 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:07:26,414 - custom_logger - INFO - INFO:AVI saved. Output saved to data\2024-03-05_16-07-09\recording.avi
+2024-03-05 16:07:26,416 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:03,271 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 16:08:03,272 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_16-08-03\frames,
+data\2024-03-05_16-08-03\input_logs.csv,
+data\2024-03-05_16-08-03\recording.avi
+]
+2024-03-05 16:08:03,277 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:34,186 - custom_logger - INFO - INFO:Recording stopped, saving data.
+2024-03-05 16:08:34,765 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:34,766 - custom_logger - INFO - INFO:AVI saved. Output saved to data\2024-03-05_16-08-03\recording.avi
+2024-03-05 16:08:34,767 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:36,493 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 16:08:36,494 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_16-08-36\frames,
+data\2024-03-05_16-08-36\input_logs.csv,
+data\2024-03-05_16-08-36\recording.avi
+]
+2024-03-05 16:08:36,499 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:38,685 - custom_logger - INFO - INFO:Recording stopped, saving data.
+2024-03-05 16:08:38,816 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:08:38,817 - custom_logger - INFO - INFO:AVI saved. Output saved to data\2024-03-05_16-08-36\recording.avi
+2024-03-05 16:08:38,817 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:09:13,726 - custom_logger - INFO - INFO:Recording Started.
+2024-03-05 16:09:13,727 - custom_logger - INFO - CONFIG:Paths Generated: [
+data\2024-03-05_16-09-13\frames,
+data\2024-03-05_16-09-13\input_logs.csv,
+data\2024-03-05_16-09-13\recording.avi
+]
+2024-03-05 16:09:13,733 - custom_logger - INFO - INFO:UI Updated.
+2024-03-05 16:09:30,936 - custom_logger - INFO - INFO:Recording stopped, saving data.
+2024-03-05 16:09:45,161 - custom_logger - INFO - INFO:Recording stopped, saving data.
