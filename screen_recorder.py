@@ -104,7 +104,7 @@ class ScreenRecorder:
         self.root.title("Screen Recorder")
         self.root.geometry("325x600")
         self.root.minsize(300, 575)
-        # self.root.maxsize(525, 825)
+
         self.root.resizable(False, False)
         self.root.configure(background="#141414")
 
