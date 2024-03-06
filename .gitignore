@@ -1,2 +1,6 @@
 data/*
 logs/*
+.idea/*
+__pycache__/*
+.gitignore
+to-do.md
