@@ -25,7 +25,15 @@ Desktop Recorder is developed and tested exclusively for Windows 10. It is not c
    ```
    cd desktop-recorder
    ```
-3. Install the required dependencies:
+3. Create a conda environment:
+   ```
+   conda create -n env-name python=3.10
+   ```
+4. Activate the environment:
+   ```
+   conda activate env-name
+   ```
+5. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```

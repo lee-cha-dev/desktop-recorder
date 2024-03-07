@@ -390,6 +390,8 @@ class ScreenRecorder:
                 self.logger.log(f"Error:Failed to open recording: {filename}. Error: {e}")
 
     def on_exit(self):
+        self.logger.log(f"INFO:Exiting application")
+        self.logger.save()
         if self.recording_flag:
             self.stop_recording()
             self.root.destroy()
